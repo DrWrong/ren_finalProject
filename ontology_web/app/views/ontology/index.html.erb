@@ -1,0 +1,78 @@
+<div class="panel panel-success">
+    <div class="panel-heading">
+        <h3 class="panel-title">
+            Sensors value
+        </h3>
+    </div>
+    <div class="panel-body">
+    	<form>
+    		<div class="form-group">
+    			<label for="exH2s">exH2s value</label>
+    			<input type="text" class="form-control" ng-model="sensors.exH2s">
+    		</div>
+    		<div class="form-group">
+    			<label for="exOxy2">exOxy2 value</label>
+    			<input class="form-control" type="text" ng-model="sensors.exOxy2">
+    		</div>
+    		<div class="form-group">
+    			<label>exPH2 value</label>
+    			<input type="text" class="form-control" ng-model="sensors.exPH2">
+    		</div>
+    		<div class="form-group">
+    			<label>exTempl value</label>
+    			<input type="text" class="form-control" ng-model="sensors.exTempl">
+    		</div>
+    		<div class="form-group">
+    			<label for="exampleConducitivity2">exampleConducitivity2 value</label>
+    			<input class="form-control" type="text" ng-model="sensors.exampleConducitivity2">
+    		</div>
+    		<div class="btn-group">
+    			<button class="btn btn-primary" ng-click="loadOrigin()">Load Origin Value</button>
+    			<button id="reason" class="btn btn-success" ng-click="performReason()">Perform Reason</button>
+    		</div>
+    	</form>
+    </div>
+</div>
+
+<div class="panel panel-info">
+	<div class="panel-heading">
+		<h3 class="panel-title">
+			Reason Result
+		</h3>
+	</div>
+	<div class="list-group">
+		<div class="row list-group-item">
+			<div class="col-md-6">
+				reportH2s
+			</div>
+			<div class="col-md-6">
+				<%= @left_bracket %>reasonResult.reportH2S<%= @right_bracket %>
+			</div>
+		</div>
+		<div class="row list-group-item">
+			<div class="col-md-6">
+				reportGQOW
+			</div>
+			<div class="col-md-6">
+				<%= @left_bracket %>reasonResult.reportGQOW<%= @right_bracket %>
+			</div>
+		</div>
+		<div class="row list-group-item">
+			<div class="col-md-6">
+				reportOil
+			</div>
+			<div class="col-md-6">
+				<%= @left_bracket %>reasonResult.reportOil<%= @right_bracket %>
+			</div>
+		</div>
+		<div class="row list-group-item">
+			<div class="col-md-6">
+				verifyData
+			</div>
+			<div class="col-md-6">
+				<%= @left_bracket %>reasonResult.verifyData<%= @right_bracket %>
+			</div>
+		</div>
+
+	</div>
+</div>
