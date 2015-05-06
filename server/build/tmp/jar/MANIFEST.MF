@@ -1,0 +1,5 @@
+Manifest-Version: 1.0
+Implementation-Title: Ontology Server
+Implementation-Version: 1.0
+Main-Class: tk.drwrong.ontology.ThriftOntologyServer
+
