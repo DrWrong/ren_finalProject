@@ -1,3 +1,8 @@
+(function($){
+    console.log("i am running");
+    $("#title").height($("#right").height());
+})(jQuery);
+
 var ontologyApp = angular.module('ontologyApp',[]);
 
 // var sensors;
@@ -51,4 +56,5 @@ ontologyApp.controller("ontologyUI", function($scope, $http){
 
     };
 });
+
 
